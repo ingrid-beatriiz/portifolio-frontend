@@ -1,6 +1,7 @@
 import { header } from '@/app/portfolio'
 import Navbar from '../Navbar/Navbar'
 import './Header.css'
+import Link from 'next/link'
 
 const Header = () => {
   const { homepage, title } = header
@@ -9,9 +10,9 @@ const Header = () => {
     <header className='header center'>
       <h3>
         {homepage ? (
-          <a href={homepage} className='link'>
+          <Link href={homepage} className='link'>
             {title}
-          </a>
+          </Link>
         ) : (
           title
         )}
