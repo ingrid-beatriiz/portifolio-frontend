@@ -1,10 +1,11 @@
 import genCommitMessage from '@/utils/commit-gen'
 import './Footer.css'
 
+const comimtMessage = genCommitMessage();
 const Footer = () => (
   <footer className='footer'>
     <p> Criado por Ingrid Beatriz &#169; {new Date().getFullYear()} </p>
-    <h5> Commit aleatório feito no GitHub: {genCommitMessage()} </h5>
+    <p> Commit aleatório feito no Github: {comimtMessage} </p>
   </footer>
 )
 
